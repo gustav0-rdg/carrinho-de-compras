@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Carrinho de compras</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/cores.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style-login.css') }}">
+    <script src="{{ url_for('static', filename='script/validacao.js') }}" defer></script>
+</head>
+<body>
+    <section class="carrinho-geral">
+        <header class="carrinho-header">
+            <h1>Carrinho de compras</h1>
+            <ul class="carrinho-header__list">
+                <li><a href="">Cadastre-se</a></li>
+                <li><a href="">Catálogo</a></li>
+            </ul>
+        </header>
+        <main class="carrinho-main">
+                <form action="" class="carrinho-form">
+                    <input type="text" name="usuario" placeholder="Nome de usuário..." class="carrinho-form__input" id="usuario">
+                    <input type="password" name="senha" placeholder="Senha..." class="carrinho-form__input" id="senha">
+                    <button class="carrinho-form__btn">Entrar</button>
+                    <a href="">Não tem uma conta ainda? Cadastre-se já!</a>
+                </form>
+        </main>
+    </section>
+</body>
+</html>
