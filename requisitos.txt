@@ -1,0 +1,22 @@
+Carrinho de compras - Web Service
+
+Usuario comum - ve itens da loja e pode comprar
+Usuario admin - Pode adicionar itens a loja
+
+Funcionalidades
+* Básico
+
+- Tela de cadastro
+- Tela de login
+- Validacao de Login e cadastro
+- Adicionar tudo ao banco de dados
+- Adicionar produtos ao banco de dados
+
+* Mediano
+
+- Selecionar os produtos e criar categorias pra eles
+- Poder organizar pelas categorias
+
+* Avançado
+
+- Carrinho de compras
