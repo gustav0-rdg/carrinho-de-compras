@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root {
+    --cor-fundo-principal: #f4f4f4;
+    --cor-fundo-secundario: #ffffff;
+    --cor-principal: #3498db;
+    --cor-secundaria: #2c3e50;
+    --cor-botao: #2980b9;
+    --cor-botao-hover: #1f6f8b;
+    --cor-texto: #333333;
+    --cor-link: #3498db;
+    --cor-link-hover: #2980b9;
+}
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: var(--cor-fundo-principal);
+    color: var(--cor-texto);
+}
+
+a {
+    color: var(--cor-link);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--cor-link-hover);
+}
+
+button {
+    background-color: var(--cor-botao);
+    color: white;
+}
+
+button:hover {
+    background-color: var(--cor-botao-hover);
+}
