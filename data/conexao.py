@@ -1,5 +1,4 @@
 import mysql.connector
-ssssssssssssssssssss
 class Conexao:
     # Criando conexao
     def criar_conexao():
@@ -8,7 +7,7 @@ class Conexao:
             port=3306,
             user="root",
             password="root",
-            database = "dbTarefas"
+            database = "dbcarrinho"
         )
 
         return conexao
