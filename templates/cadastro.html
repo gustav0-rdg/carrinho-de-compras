@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro - Carrinho de compras</title>
+    <script src="{{ url_for('static', filename='script/validacao.js') }}" defer></script>
 </head>
 <body>
     <h1>Cadastro - Carrinho de compras</h1>
     <form action="/cadastrar/usuario" method="post">
-        <input type="text" name="usuario" placeholder="Usuario...">
+        <input type="text" name="usuario" id="usuario" placeholder="Usuario...">
         <input type="text" name="nome" placeholder="Nome...">
-        <input type="password" name="senha" placeholder="Senha...">
+        <input type="password" name="senha"  idSenha="senha" placeholder="Senha...">
+        <button type="submit" class="carrinho-form__btn">Cadastrar</button>
     </form>
 </body>
 </html>
