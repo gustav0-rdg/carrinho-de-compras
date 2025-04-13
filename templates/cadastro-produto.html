@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de produtos</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/cores.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style-pag-admin.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Cadastrar Produtos</h1>
+    </header>
+    <main>
+        <form action="/cadastrar/produtos/cadastro" method="post" enctype="multipart/form-data">
+            <input type="text" name="nome" placeholder="Nome do produto..." required>
+            <input type="text" name="descricao" placeholder="Descrição do produto..." required>
+            <input type="number" name="preco" placeholder="Preço do produto..." step="0.01" min="0" required>
+            
+            <label for="categoria">Categoria do produto:</label>
+            <select name="categoria" id="categoria" required>
+                <option value="" disabled selected>Selecione a categoria</option>
+                <option value="comida">Comida</option>
+                <option value="eletronico">Eletrônico</option>
+                <option value="limpeza">Limpeza</option>
+                <option value="frutas">Frutas</option>
+                <option value="frios">Frios</option>
+                <option value="massa">Massa</option>
+                <option value="doce">Doce</option>
+                <option value="bebidas">Bebidas</option>
+                <option value="pets">Pets</option>
+            </select>
+
+            <input type="file" name="imagem" accept="image/*">
+
+            <button type="submit">Cadastrar</button>
+        </form>
+    </main>
+</body>
+</html>
