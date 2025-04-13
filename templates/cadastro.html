@@ -5,14 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro - Carrinho de compras</title>
     <script src="{{ url_for('static', filename='script/validacao.js') }}" defer></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/cores.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style-cadastro.css') }}">
 </head>
 <body>
-    <h1>Cadastro - Carrinho de compras</h1>
-    <form action="/cadastrar/usuario" method="post">
-        <input type="text" name="usuario" id="usuario" placeholder="Usuario...">
-        <input type="text" name="nome" placeholder="Nome...">
-        <input type="password" name="senha"  idSenha="senha" placeholder="Senha...">
-        <button type="submit" class="carrinho-form__btn">Cadastrar</button>
-    </form>
+    <header>
+        <h1>Cadastro - Carrinho de compras</h1>
+    </header>
+    <main>
+        <form action="/cadastrar/usuario" method="post">
+            <input type="text" name="usuario" id="usuario" placeholder="Usuario..." min="8">
+            <input type="text" name="nome" placeholder="Nome...">
+            <input type="password" name="senha"  idSenha="senha" placeholder="Senha..." min="8">
+            <button type="submit" class="carrinho-form__btn">Cadastrar</button>
+            <div class="link-login">
+                <a href="/">Já tem conta? Faça login</a>
+            </div>
+        </form>
+    </main>
 </body>
 </html>
