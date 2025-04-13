@@ -8,12 +8,17 @@ app.secret_key = "12345678amoaliicai"
 def pag_inicial():
     return render_template("login.html")
 
-@app.route("/logar")
+@app.route("/logar", methods=["POST"])
 def logar():
     usuario = request.form.get("usuario")
     senha = request.form.get("usuario")
+    logou = Usuario.logar(usuario, senha)
+    if logou:
+        return redirect("/catalogo")
+    else:
+        return redirect("/")
 
-@app.route("/cadastrar")
+@app.route("/cadastro")
 def pag_cadastrar():
     return render_template("cadastro.html")
 
@@ -24,5 +29,9 @@ def cadastrar():
     senha = request.form.get('senha')
     Usuario.cadastrar(usuario, nome, senha)
     return redirect("/")
+
+@app.route("/catalogo")
+def pag_catalogo():
+    return render_template("compras.html")
 
 app.run(debug=True)
